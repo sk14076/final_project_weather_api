@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Weather sound website</title>
+
+    <!-- p5 scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+
+<header>   
+    <div class="logo"> 
+        <a href="index.html">
+        <img src="img/Weather notes.png" alt="logo">
+        </a>
+    </div>
+</header>
+
+
+
+
+
+<div class="bigcontainer">
+
+<!-- Search bar section  start  -->
+    <div class="top_gap">
+            <h1>Type in any city name around the world to see an animation!</h1>
+    </div>
+<script src="sketch.js"></script>
+  <div class="wrap">
+    <div class="search">
+       <input id = "city" value="Which city do you want to search?" type="text" class="searchTerm">
+       <button type="submit" class="searchButton" id="search_button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+ </div>
+
+<!-- Search bar section end  -->
+
+
+
+<!-- main content section start -->
+    <div class="midsection">        
+    <!-- slid out menu start -->
+        <div class="hamburger_menu">
+            <div class="wrapper">
+                <input id="hamburger" type="checkbox" class="hamburger-checkbox">
+                <label for="hamburger" class="hamburger-label" role="button" aria-labelledby="menu">&#xf0c9;</label>
+                    <nav role="navigation" class="sidebar">
+                        <ul class="menu">
+                          <div><li><a href="index.html">Home</a></li></div>
+                          <div><li><a href="animation.html">weather animation</a></li></div>
+                          <div><li><a href="pricing.html">Pricing</a></li></div>
+                          <div><li><a href="downloads.html">Download</a></li></div>
+                        </ul>
+                    </nav>                   
+            </div>
+        </div>
+    <!-- slid out menu end --> 
+
+        <div class="mid1">
+                <div>
+                    
+                </div>
+        </div>
+    </div>
+</div>
+<!-- main content section end -->
+
+
+
+
+
+<!-- Footer contents start -->
+<footer>
+    <div class="top_cont">
+        <div class="about">
+            <div>
+                <h6>ABOUT</h6>
+            </div>
+            <div>
+                <p>When a user searches a certain city, the webpage will be using a 
+                    <br>free weather API and based on the data it retrieves, such as 
+                    <br> temperature, humidity, etc, the website will put out music
+                    <br> that fits the feel of the weather in that city. 
+                    <br>(e.g. if a city with rainy weather was searched then music related
+                    <br> to rain will be shown on the page to be played.)
+                </p>
+            </div>
+        </div>
+        <div class="cmnty">
+            <div>
+                <h6>COMMUNITIES</h6>
+            </div>
+            <div class="cmnty_lists">
+                <div><li><a href="">For Artists</a></li></div>
+                <div><li><a href="">Developer</a></li></div>
+                <div><li><a href="">Advertising</a></li></div>
+                <div><li><a href="">Investors</a></li></div>
+                <div><li><a href="">Vendors</a></li></div>
+
+            </div>
+        </div>
+
+        <div class="cmnty">
+            <div>
+                <h6>USEFUL LINKS</h6>
+            </div>
+            <div class="cmnty_lists">
+                <div><li><a href="">Support</a></li></div>
+                <div><li><a href="">Web Player</a></li></div>
+                <div><li><a href="">Free Mobile App</a></li></div>
+                <div><li><a href="">Car Thing</a></li></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer_bottom_container">
+        <div class="Copyright">
+            <p>Copyright &copy; 2022 
+            All Rights Reserved by Kevin LEE.
+            </p>
+        </div>
+        <div class="social-icons">
+            <div><li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li></div>
+            <div><li><a class="twitter" href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a></li></div>
+            <div><li><a class="instagram" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li></div>
+            <div><li><a class="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li></div>
+        </div>
+    </div>
+</footer>
+<!-- Footer contents end -->
+
+
+
+
+</body>
+</html>

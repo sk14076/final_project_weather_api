@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Weather sound website</title>
+</head>
+
+<body>
+
+
+<header>   
+    <div class="logo"> 
+        <a href="index.html">
+        <img src="img/Weather notes.png" alt="logo">
+        </a>
+    </div>
+</header>
+
+
+
+
+
+<div class="bigcontainer">
+
+<!-- Search bar section  start  -->
+    <div class="top_gap">
+            <h1>Search the weather Notes of every city around the world!</h1>
+    </div>
+
+    <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="Which city do you want to search?">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+<!-- Search bar section end  -->
+
+
+
+
+
+<!-- main content section start -->
+    <div class="midsection">        
+    <!-- slid out menu start -->
+        <div class="hamburger_menu">
+            <div class="wrapper">
+                <input id="hamburger" type="checkbox" class="hamburger-checkbox">
+                <label for="hamburger" class="hamburger-label" role="button" aria-labelledby="menu">&#xf0c9;</label>
+                    <nav role="navigation" class="sidebar">
+                        <ul class="menu">
+                          <div><li><a href="index.html">Home</a></li></div>
+                          <div><li><a href="animation.html">weather animation</a></li></div>
+                          <div><li><a href="pricing.html">Pricing</a></li></div>
+                          <div><li><a href="downloads.html">Download</a></li></div>
+                        </ul>
+                    </nav>                   
+            </div>
+        </div>
+    <!-- slid out menu end --> 
+
+        <div class="mid1">
+            <div class="plans">
+                <div class="plan-box">
+                  <div class="plan-options">
+                    <p class="plan-name">
+                      Basic
+                    </p>
+                    <div class="plan-price">
+                      <strong>Free</strong>
+                    </div>
+                     <ul class="plan-details">
+                       <li>&nbsp;Unlimited streaming</li>
+                       <li>&nbsp;<strong>30 song</strong>&nbsp; Downloads</li>
+                       <li>&nbsp;<strong>up to 3</strong>&nbsp; shared memebers</li>
+                       <li>&nbsp;<strong>Normal speed</strong> package delivery</li>
+                       <li>&nbsp;With Ads in between streams</li>
+                       <li>&nbsp;<strong>24/7</strong> Customer Support</li>
+                    </ul>
+                    
+                    <div class="element-hidden more-options">
+                      <a href="#">+ more options</a>
+                      <div class="element-hidden additional-options">
+                        <p>If you need more options, please consider our <a href="#">Premium</a> or <a href="#">Pro</a> plans.</p>
+                      </div>
+                    </div>
+                    
+                    <a class="button" href="#">Choose</a>
+                  </div>
+                </div>
+                
+                <div class="plan-box">
+                  <div class="plan-options">
+                    <p class="plan-name">
+                      Premium
+                    </p>
+                    <div class="plan-price">
+                      <strong>$5.99</strong>/mo
+                    </div>
+                    <ul class="plan-details">
+                        <li>&nbsp;Unlimited streaming</li>
+                        <li>&nbsp;<strong>80 song</strong>&nbsp;Downloads</li>
+                        <li>&nbsp;<strong>up to 5</strong>&nbsp;shared memebers</li>
+                        <li>&nbsp;<strong>Fast speed</strong>&nbsp;package delivery</li>
+                        <li>&nbsp;Without Ads in between streams</li>
+                        <li>&nbsp;<strong>24/7</strong>&nbsp;Customer Support</li>
+                     </ul>
+                    
+                    <div class="element-hidden more-options">
+                      <a href="#">+ more options</a>
+                      <div class="element-hidden additional-options">
+                        <ul>
+                          <li><input type="checkbox" id="10gb" name="extragigs" /> <label for="10gb">10GB more storage</label></li>
+                        </ul>
+                      </div>
+                    </div>
+                                        
+                    <a class="button" href="#">Choose</a>
+                  </div>
+                </div>
+                
+                <div class="plan-box">
+                  <div class="plan-options">
+                    <p class="plan-name">
+                      Premium Plus
+                    </p>
+                    <div class="plan-price">
+                      <strong>$11.99</strong>/mo
+                    </div>
+                    <ul class="plan-details">
+                        <li>&nbsp;Unlimited streaming</li>
+                        <li>&nbsp;<strong>200 song</strong>&nbsp; Downloads</li>
+                        <li>&nbsp;<strong>up to 7</strong>&nbsp; shared memebers</li>
+                        <li>&nbsp;<strong>One-day</strong>&nbsp;package delivery</li>
+                        <li>&nbsp;Without Ads in between streams</li>
+                        <li>&nbsp;<strong>24/7</strong>&nbsp;Customer Support</li>
+                     </ul>
+                    
+                    <div class="element-hidden more-options">
+                      <a href="#">+ more options</a>
+                      <div class="element-hidden additional-options">
+                        <ul>
+                          <li><input type="checkbox" id="10gb" name="extragigs" /> <label for="10gb">10GB more storage</label></li>
+                          <li><input type="checkbox" id="marketing" name="marketing" /> <label for="marketing">SEO and Marketing Monthly Evaluation</label></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <a class="button" href="#">Choose</a>
+                  </div>
+                </div>
+              </div>
+        </div>              
+    </div>
+</div>
+<!-- main content section end -->
+
+
+
+
+
+<!-- Footer contents start -->
+<footer>
+    <div class="top_cont">
+        <div class="about">
+            <div>
+                <h6>ABOUT</h6>
+            </div>
+            <div>
+                <p>When a user searches a certain city, the webpage will be using a 
+                    <br>free weather API and based on the data it retrieves, such as 
+                    <br> temperature, humidity, etc, the website will put out music
+                    <br> that fits the feel of the weather in that city. 
+                    <br>(e.g. if a city with rainy weather was searched then music related
+                    <br> to rain will be shown on the page to be played.)
+                </p>
+            </div>
+        </div>
+        <div class="cmnty">
+            <div>
+                <h6>COMMUNITIES</h6>
+            </div>
+            <div class="cmnty_lists">
+                <div><li><a href="">For Artists</a></li></div>
+                <div><li><a href="">Developer</a></li></div>
+                <div><li><a href="">Advertising</a></li></div>
+                <div><li><a href="">Investors</a></li></div>
+                <div><li><a href="">Vendors</a></li></div>
+
+            </div>
+        </div>
+
+        <div class="cmnty">
+            <div>
+                <h6>USEFUL LINKS</h6>
+            </div>
+            <div class="cmnty_lists">
+                <div><li><a href="">Support</a></li></div>
+                <div><li><a href="">Web Player</a></li></div>
+                <div><li><a href="">Free Mobile App</a></li></div>
+                <div><li><a href="">Car Thing</a></li></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer_bottom_container">
+        <div class="Copyright">
+            <p>Copyright &copy; 2022 
+            All Rights Reserved by Kevin LEE.
+            </p>
+        </div>
+        <div class="social-icons">
+            <div><li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li></div>
+            <div><li><a class="twitter" href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a></li></div>
+            <div><li><a class="instagram" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li></div>
+            <div><li><a class="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li></div>
+        </div>
+    </div>
+</footer>
+<!-- Footer contents end -->
+
+
+
+
+</body>
+</html>
